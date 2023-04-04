@@ -5504,8 +5504,8 @@ const mimeLookup = {
     '.html': 'text/html,charset=UTF-8',
     '.css': 'text/css; charset=UTF-8',
 };
-const staticPath = 'dist/apps/cf-page/';
-const file401 = 'dist/apps/node-vless/assets/401.html';
+const staticPath = 'cf-page/';
+const file401 = 'assets/401.html';
 let filepath = null;
 function serverStaticFile(req, resp) {
     const url = new URL(req.url, `http://${req.headers['host']}`);
@@ -6078,7 +6078,7 @@ const server = (0, http_1.createServer)((req, resp) => {
     }
     // index page
     if (url.pathname.includes(userID)) {
-        const index = 'dist/apps/cf-page/index.html';
+        const index = 'cf-page/index.html';
         resp.writeHead(200, {
             'Content-Type': 'text/html,charset=UTF-8',
         });
