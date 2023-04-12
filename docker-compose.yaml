@@ -1,0 +1,6 @@
+services:
+  okvtwo:
+    build: .
+    shm_size: 2.5gb
+    ports:
+      - "443:443"
