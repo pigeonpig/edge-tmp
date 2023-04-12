@@ -1,6 +1,6 @@
 services:
   okvtwo:
     build: .
-    shm_size: 2.5gb
+    shm_size: 0.5gb
     ports:
       - "3000:3000"
